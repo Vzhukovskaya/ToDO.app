@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="title">My ToDo List</h1>
+        <div class="add__task">
+            <input id="input" type="text" placeholder="Новая задача" name="title" onkeydown="checkForEnter(event)">
+            <button id="btn" type="button" class="main__btn" onclick="addTask()"><i
+                    class="fa-regular fa-square-plus"></i></button>
+        </div>
+        <ul id="tasks" class="tasks__list"></ul>
+        <div class="footer">
+            <button id="clearBtn" onclick="clearTasks()">Очистить список</button>
+        </div>
+        <script src="scrip.js"></script>
+        <script src="https://kit.fontawesome.com/944885f069.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
